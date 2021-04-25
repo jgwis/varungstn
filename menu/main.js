@@ -1,21 +1,4 @@
-/*
-Copyright © 2013 Adobe Systems Incorporated.
 
-Licensed under the Apache License, Version 2.0 (the “License”);
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an “AS IS” BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
-
-/*jslint browser: true */
-/*global jQuery */
 if (jQuery) {
     (function ($) {
         "use strict";
@@ -34,3 +17,22 @@ if (jQuery) {
         
     }(jQuery));
 }
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("dropdown-field");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+    $('.dropdown-field').show();
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+        $('.dropdown-field').hide();
+      } else {
+        a[i].style.display = "none";
+        
+      }
+    }
+  }

@@ -1063,11 +1063,11 @@ button:focus {
 }
 
 .dropdown-field {
-	display: none;
+  	display: none;
     background: #fff;
     position: absolute;
-    width: 200px;
-    top: 32px;
+    width: 92%;
+    top: 31px;
     left: 0;
     z-index: 11;
     border-radius: 0 0 5px 5px;

@@ -31,40 +31,79 @@
 
 <body class="init">
 
-    <div class="mid-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-xs-12 col-sm-12">
-                    <div class="site-branding ">
-                        <h1>
-                            <a target="_blank" href="index.html"><img src="images/Emblem_of_India-white.svg" />e-Invoice
-                            </a>
-                        </h1>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12 col-sm-12">
-                    <div class="top-header">
-                        <div class="container">
-                            <nav>
-                                <a class="p-2 skip" href="#maincontent">Skip to Main Content</a>
-                                <a class="p-2 hidden" href="#"><i class="fa fa-adjust"></i></a>
-                                <a target="_blank" href="#" class="fresize f-up hidden">A<sup>+</sup></a>
-                                <a target="_blank" href="#" class="fresize f-up hidden">A<sup>-</sup></a>
-                            </nav>
-                        </div>
-                    </div>
-                    <form class="exampleSearch" action="/action_page.php">
-                        <input class="rounded-left" type="text" placeholder="Search.." name="search2" />
-                        <button class="rounded-right" type="submit"><i class="fa fa-search"></i></button>
-                        <br />
-						<span class="white_logo"><img src="images/logo_white.png" /></span>
-                    </form>
-                    <div class="clearfix"></div>
-
-                </div>
-            </div>
+  <div class="mid-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-12 col-sm-12">
+          <div class="site-branding ">
+            <h1>
+              <a target="_blank" href="index.html"><img src="images/Emblem_of_India-white.svg" />e-Invoice
+              </a>
+            </h1>
+          </div>
         </div>
+        <div class="col-md-6 col-xs-12 col-sm-12">
+          <div class="top-header">
+            <div class="container">
+              <nav>
+                <a class="p-2 skip" href="#maincontent">Skip to Main Content</a>
+                <a class="p-2 hidden" href="#"><i class="fa fa-adjust"></i></a>
+                <a target="_blank" href="#" class="fresize f-up hidden">A<sup>+</sup></a>
+                <a target="_blank" href="#" class="fresize f-up hidden">A<sup>-</sup></a>
+              </nav>
+            </div>
+          </div>
+    <form class="exampleSearch">
+    <input onkeyup="filterFunction()" id="myInput" class="rounded-left" type="text" placeholder="Search.." name="search2" />
+    <button class="rounded-right" type="submit"><i class="fa fa-search"></i></button>
+    <div id="dropdown-field" class="dropdown-field">
+  	<a target="_blank" href="https://einvoice1.gst.gov.in/">IRP-1 (NIC)</a>
+    <a target="_blank" href="https://einvoice1-trial.nic.in/">Trial/Testing Portal-1 (NIC)</a>
+    <a target="_blank" href="https://einv-apisandbox.nic.in/">API/Sandbox-1 (NIC)</a>
+    <a target="_blank" href="https://www.gstn.org.in/einvoice-faqs">FAQs</a>
+    
+    <a href="./downloads/english-version-1.2-Dt-30-3-2021.pdf">e-Invoice - At a Glance</a>
+    <a href="./downloads/GST%20e-invoice%20System%20-%20Detailed%20Overview.pdf">e-Invoice – Detailed Overview </a>
+    <a href="./downloads/PPT_on_eInvoice_system.pdf">e-Invoice - Presentation</a>
+
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/ResolutionErrors">Common Errors and Resolutions</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/CBT">Help Videos</a>
+    <a href="./view-all-updates.html">Notifications</a>
+    <a href="./how-to-generate-IRN.html">How to Generate IRN</a>
+    <a target="_blank" href="https://einv-apisandbox.nic.in/index.html">API Specs and Testing</a>
+    <a target="_blank" href="https://einv-apisandbox.nic.in/release-notes.html">Validations</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/MasterCodes">Master Codes & HSN</a>
+    <a href="./gst-suvidha-providers.html">GST Suvidha providers (GSPs)</a>
+    <a href="./billing-and-accounting-software-providers.html">ERPs/Billing and Accounting Software Providers</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/BulkGenerationTools">Offline Utilities</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/QRCodeVerifyApp">Verify QR Code Mobile App</a>
+    <a href="./downloads/GST%20e-invoice%20Schema%20-%20Version%201.1%20Dt.%2030-7-2020%20-%20Copy.xlsx">INV-01 (Schema)</a>
+
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/EinvEnabled">Check Enablement Status</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Home/Enablement">Enable Me for e-invoice</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/GSTINsGeneratingIRN">GSTINs generating IRNs</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/VSignedInvoice">Upload JSON and Verify</a>
+
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/QRCodeVerifyApp">Download QR code Reader</a>
+    <a target="_blank" href="https://einvoice1.gst.gov.in/Others/Support">Help</a>
+    <a href="./index.html">Home</a>
+    <a target="_blank" href="https://www.cbic.gov.in/">Central Board of Indirect Taxes & Customs (CBIC)</a>
+    <a target="_blank" href="http://www.gstcouncil.gov.in/state-government-gst-website">State GST Websites</a>
+    <a target="_blank" href="https://ewaybill.nic.in/">E-way Bill Portal</a>
+    <a target="_blank" href="https://gstn.org.in/">GSTN</a>
+    <a href="./website-policy.html">Website Policy </a>
+    <a href="./hyperlink-policy.html">Hyperlink Policy </a>
+    <a href="./disclaimer.html">Disclaimer </a>
+    <a target="_blank" href="https://selfservice.gstsystem.in/">Log your grievance</a>
+    <a target="_blank" href="#" data-toggle="modal" data-target="#exampleModal">Report an issue on this
+      page</a>
+	 </div>
+    </form>
+     <span class="white_logo"><img src="images/logo_white.png" /></span>
     </div>
+      </div>
+    </div>
+  </div>
 
     <div class="primaryBg main-nav">
     <div class="container">
