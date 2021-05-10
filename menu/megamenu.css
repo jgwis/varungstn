@@ -474,16 +474,24 @@
   
  span.white_logo {
     position: absolute;
-    top: -60px;
+    top: -85px;
     right: 68px;
     border-radius: 5px;
-	height: 42px;
+	  height: 42px;
 }
 
 .white_logo img {
     max-width: 50px;
     padding-top: 7px;
     margin: 0 auto;
+}
+
+.topics {
+  margin-bottom: 20px;
+}
+
+.footer-links.pl-0.pr-0 {
+  padding: 0 15px !important;
 }
   
 }
@@ -507,6 +515,9 @@
     flex: 0 0 50%;
 }
 
+.exampleSearch {
+  right: 60px;
+}
 
 .about_container .col-sm-5 {
     max-width: 100% !important;
