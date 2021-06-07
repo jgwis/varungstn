@@ -47,3 +47,21 @@ function filterFunction() {
       $('.error-msg').removeClass('hidden');
     }
   });
+  
+ // click popup report//
+ 
+ function emptyData() {
+	var form = document.getElementById("myForm");
+    var x;
+    x = $('.report_modal textarea').val();
+    if (x != "") {
+       $('.errorMsg').addClass('hidden');
+       form.reset();
+    }
+	
+	else {
+		  $('.errorMsg').removeClass('hidden');
+		   return false;
+	}
+}
+ 

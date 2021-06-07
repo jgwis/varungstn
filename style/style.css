@@ -1124,3 +1124,12 @@ span.dot {
 .notification-table td:nth-child(1) a {
   text-decoration: underline;
 }
+
+span.errorMsg {
+    font-size: 12px;
+    color: red;
+}
+
+.btn-warning:hover {
+    color: #fff;
+}
